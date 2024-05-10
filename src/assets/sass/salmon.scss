@@ -7,7 +7,7 @@
     object-fit: cover;
 }
 
-#salmon-overview{
+#salmon-overview {
 
     .image-group {
         width: calc(730 / 16 * 1em);
@@ -21,7 +21,7 @@
 }
 
 
-#salmon-location{
+#salmon-location {
 
     .image-group {
         width: calc(598 / 16 * 1em);
@@ -34,7 +34,7 @@
     }
 }
 
-#salmon-bring{
+#salmon-bring {
 
     .image-group {
         width: calc(747 / 16 * 1em);
@@ -46,3 +46,237 @@
         }
     }
 }
+
+
+
+
+
+/*-- -------------------------- -->
+<---        Overview               -->
+<--- -------------------------- -*/
+
+#overview {
+
+    .cs-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        max-width: 950px;
+
+        .picture {
+            flex: 0 0 20%;
+
+            img {
+                max-width: 550px;
+            }
+        }
+
+        .content {
+            flex: 0 0 55%;
+
+
+
+            ul li::marker {
+                color: #049a4b;
+                font-size: 25px;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (min-width: 950px) and (max-width: 1150px) {
+
+
+    #overview {
+        .cs-container {
+
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 650px;
+
+            .picture {
+                img {
+                    max-width: 70vw;
+                }
+            }
+
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex: 0 0 55%;
+
+
+
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 950px) {
+
+    #overview {
+        .cs-container {
+
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 700px;
+
+            .picture {
+                img {
+                    max-width: 70vw;
+                }
+            }
+
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex: 0 0 55%;
+
+
+
+            }
+        }
+    }
+
+}
+
+
+
+
+/*-- -------------------------- -->
+<---        Book our service     -->
+<--- -------------------------- -*/
+
+
+.service_section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+
+    .service_container {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #25082D;
+        width: 950px;
+        border-radius: 50px;
+        gap: 1rem;
+
+
+        .s_container {
+            padding-left: 40px;
+            padding-bottom: 40px;
+
+
+            h2 {
+                color: #FFFFFF;
+                font-size: clamp(26px, 4vw, 42px);
+                font-family: "Made Soulmaze", "Trebuchet MS", sans-serif;
+                font-weight: 300;
+                text-transform: uppercase;
+                padding-bottom: 40px;
+
+            }
+        }
+
+        .picture {
+
+            img {
+                max-width: 400px;
+                height: auto;
+                margin: 0px;
+                float: right;
+                border-top-left-radius: 80%;
+                border-bottom-left-radius: 41%;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+
+    .service_section {
+
+
+        .service_container {
+
+            flex-direction: column; //this one
+            max-width: 400px; //
+            gap: 1rem;
+
+
+            .s_container {
+
+
+
+                h2 {
+                    font-family: "Made Soulmaze", "Trebuchet MS", sans-serif;
+                    font-weight: 100;
+                    padding-bottom: 40px;
+                    padding-top: 40px;
+
+                }
+            }
+
+            .picture {
+
+                img {
+
+                    border-top-left-radius: 28%;
+                    border-bottom-left-radius: 50px;
+                    border-top-right-radius: 50%;
+                    border-bottom-right-radius: 50px;
+
+                }
+            }
+
+
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 470px) {
+
+
+    .service_section {
+        .service_container {
+            max-width: 300px;
+
+            .picture {
+                img {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
